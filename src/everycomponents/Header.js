@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderInt from "../componentstyles/HeaderStyles";
+import HeaderInt from "../componentstyles/HeaderShape";
 
 export const Header = (props) => {
   return (
