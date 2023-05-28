@@ -1,16 +1,40 @@
 export const AdditionStyles = {
   body: {
+    margin: "20px auto",
     position: "relative",
     padding: "1px 1px 1px 100px",
     width: 700,
     display: "grid",
+    placeItems: "center",
   },
   inputStyles: {
     width: "60%",
     margin: "15px 0",
+    padding: "10px",
+    borderRadius: "4px",
+    border: "1px solid #ccc",
+    backgroundColor: "#f8f8f8",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    transition: "border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+    ":focus": {
+      outline: "none",
+      borderColor: "#5e9cd3",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    },
   },
   select: {
     width: "65%",
-    margin: "20px null",
+    margin: "20px 0",
+    padding: "10px",
+    borderRadius: "4px",
+    border: "1px solid #ccc",
+    backgroundColor: "#f8f8f8",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    transition: "border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+    ":focus": {
+      outline: "none",
+      borderColor: "#5e9cd3",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    },
   },
 };

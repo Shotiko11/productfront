@@ -20,12 +20,13 @@ const AddProduct = () => {
   };
 
   //validation of submitted text
+  //validation of submitted text
   const textValidator = (e) => {
     const valid = /[a-zA-z]/;
     const newErrors = { ...errors };
-    newErrors[target.name] = true;
+    newErrors[e.name] = true;
     if (valid.test(e.value)) {
-      newErrors[target.name] = false;
+      newErrors[e.name] = false;
     }
     setErrors(newErrors);
   };
@@ -44,7 +45,7 @@ const AddProduct = () => {
   //process of saving the product
   const saveProduct = async () => {
     const resp = await fetch(
-      "https://scandproj.000webhostapp.com/product/add",
+      "https://scandiphpproject.000webhostapp.com/product/add",
       {
         method: "POST",
         body: JSON.stringify(data),
@@ -76,7 +77,7 @@ const AddProduct = () => {
   return (
     <div>
       <header title={"Product Add"}>
-        <button style={HeaderInt.btn} onClick={() => handleSubmit()}>
+        <button style={HeaderInt.btntwo} onClick={() => handleSubmit()}>
           Save It
         </button>
         <Link style={HeaderInt.btn} to={"/"}>

@@ -1,9 +1,9 @@
 export const CardStyles = {
   mainContainer: {
     display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
     width: 1000,
-    margin: "auto",
-    gridTemplateColumns: "270px, 270px, 270px, 270px",
+    gap: "20px",
     margin: "auto",
   },
   cardPart: {
@@ -13,8 +13,20 @@ export const CardStyles = {
     display: "flex",
   },
   card: {
-    width: 250,
-    height: 300,
-    border: "1.5px solid brown",
+    position: "relative",
+    width: "250px",
+    height: "300px",
+    border: "3px solid grey",
+    borderRadius: "8px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    transition: "box-shadow 0.3s ease-in-out",
+  },
+  button: {
+    position: "absolute",
+    top: "10px",
+    left: "10px",
   },
 };

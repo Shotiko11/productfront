@@ -22,7 +22,6 @@ function AdditionIn(props) {
       {props.errors.price && (
         <label>Sku is useless or have been used before</label>
       )}
-
       {/* Product NAME  */}
       <input
         style={AdditionStyles.inputStyles}
@@ -32,7 +31,6 @@ function AdditionIn(props) {
         onChange={(event) => props.handleChange(event)}
       />
       {props.errors.name && <label>Please submit the Name</label>}
-
       {/* product PRICE $ */}
       <input
         style={AdditionStyles.inputStyles}
@@ -43,7 +41,6 @@ function AdditionIn(props) {
         placeholder="price in USD($)"
       />
       {props.errors.price && <label>Please submit the price</label>}
-
       {/* options of productType */}
       <select
         style={AdditionStyles.select}
@@ -56,7 +53,6 @@ function AdditionIn(props) {
         <option value="Book">Book</option>
         <option value="Furniture">Furniture</option>
       </select>
-
       {/* if "DVD" is chosen */}
       {props.productType === "DVD" ? (
         <div>

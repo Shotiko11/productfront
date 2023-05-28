@@ -5,7 +5,8 @@ export const Prods = (props) => {
   return (
     <div style={CardStyles.card}>
       <input
-        className="Delete"
+        style={CardStyles.button}
+        className="delete-checkbox"
         id={props.product.SKU}
         type="checkbox"
         onChange={(event) =>

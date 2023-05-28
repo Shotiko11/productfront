@@ -38,19 +38,19 @@ const ProdsList = () => {
   }
 
   async function deleteProducts() {
-    await fetch("https://scandproj.000webhostapp.com/product/delete", {
+    await fetch("https://scandiphpproject.000webhostapp.com/product/delete", {
       method: "POST",
       body: JSON.stringify(picked),
     });
   }
 
   useEffect(() => {
-    dataFetch("https://scandproj.000webhostapp.com/product");
+    dataFetch("https://scandiphpproject.000webhostapp.com/product");
   }, []);
 
   return (
     <div>
-      <Header title={"List OF Products"}>
+      <Header title={"Products List"}>
         <Link style={HeaderInt.btn} to={"/add-product"}>
           ADD
         </Link>
@@ -59,7 +59,7 @@ const ProdsList = () => {
           style={HeaderInt.btn}
           onClick={() => handleClick()}
         >
-          DELETE
+          MASS DELETE
         </button>
       </Header>
       <Container>
